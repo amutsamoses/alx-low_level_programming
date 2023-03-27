@@ -4,16 +4,35 @@
  * print_rev - print a string in reverse
  *
  * @s: store the string
- * Return: always 0
+ *
  */
 
 void print_rev(char *s)
 {
 int i;
-int count = 0;
-for (i = 0 ; s[i] != '\n' ; i++)
-	count++;
-for (i = count ; i >= 0 ; i--)
-	_putchar(s[i]);
+
+i = string_length(s) - 1;
+while (i >= 0)
+{
+_putchar(s[i]);
+i--;
+}
 _putchar('\n');
+}
+
+/**
+ * string_length - find the length of a string
+ * Return: length of c
+ * @pointer: pointer
+ */
+
+int string_length(char *pointer)
+{
+int c = 0;
+
+while (*(pointer + c) != '\0')
+{
+c++;
+}
+return (c);
 }
