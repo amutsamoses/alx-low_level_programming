@@ -1,7 +1,6 @@
 #ifndef HASH_TABLES_H
 #define HASH_TABLES_H
 
-#include <stddef>
 #include <stdio.h>
 
 
